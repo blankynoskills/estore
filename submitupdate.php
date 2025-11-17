@@ -1,6 +1,16 @@
  <?php
-    $id = $_GET["id"];  //Hint: pass the product id via the URL
-    $sqlStatement = "SELECT * from products where id=$id";
+    require_once("dbinfo.php");
+    $id = $_POST["id"]; 
+    $name = $_POST['name'];
+    $price = $_POST['price'];
+    $quantity = $_POST['quantity'];
+
+    $sqlStatement = "UPDATE products set Name='$name' Price=$price Quantity=$quantity where ID=$id";
     $result = $mysqli -> query($sqlStatement);
-    $record = $result -> fetch_assoc();
+    if($result){
+        header("location:viewproduct.php");
+    }
+    else{
+        echo "There is an error! D:";
+    }
  ?>      
