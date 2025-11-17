@@ -31,5 +31,11 @@ require_once("dbinfo.php");
     ?>
 
 </form>
+
+<form action="viewproduct.php" method="get">
+        <button type="submit">View Product</button>
+</form>
+
+
 </body>
 </html>
