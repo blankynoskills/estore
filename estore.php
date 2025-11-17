@@ -20,7 +20,7 @@ require_once("dbinfo.php");
 
     <input type="text" name="price" placeholder="Enter product price" required>
 
-    <input type="text" name="quantity" placeholder="Enter product quantity" required>
+    <input type="number" name="quantity" placeholder="Enter product quantity" required >
 
     <input type="submit" class="submitbtn" value="Add product">
     
