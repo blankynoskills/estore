@@ -16,12 +16,13 @@ require_once("dbinfo.php");
 <form action="process.php" method="POST">
 
 
-<input type="text" name="name" placeholder="Enter product name">
+    <input type="text" name="name" placeholder="Enter product name">
 
-<input type="text" name="price" placeholder="Enter product price">
+    <input type="text" name="price" placeholder="Enter product price">
 
-<input type="text" name="quantity" placeholder="Enter product quantity">
+    <input type="text" name="quantity" placeholder="Enter product quantity">
 
+    <input type="submit" class="submitbtn" value="Add product">
 
 </form>
 </body>
