@@ -26,7 +26,7 @@ require_once("dbinfo.php");
     
     <?php
         if(isset($_GET['product']) ) {
-            echo $_GET['product'] . "has been added successfully!";
+            echo $_GET['product'] . " has been added successfully!";
         }
     ?>
 
