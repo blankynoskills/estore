@@ -12,6 +12,8 @@ $sql = "INSERT INTO products (Name, Price, Quantity)
 
 $mysqli->query($sql);
 
-header("location: estore.php");
+header("location: process.php?product=" . $name);
+
+
 
 ?>
