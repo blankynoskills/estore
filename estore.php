@@ -25,5 +25,11 @@ require_once("dbinfo.php");
     <input type="submit" class="submitbtn" value="Add product">
 
 </form>
+
+<form action="viewproduct.php" method="get">
+        <button type="submit">View Product</button>
+</form>
+
+
 </body>
 </html>
