@@ -64,15 +64,11 @@ $result = $mysqli->query($sql);
             <td><?= 'S/' . number_format($row['Price'], 2); ?></td>
             <td><?= $row['Quantity']; ?></td>
             <td>
-<<<<<<< HEAD
                 <form action="updateproduct.php" method="post">
                     <input type="hidden" name="id" value="<?php echo $row['ID']; ?>" />
                     <input type="submit" value="Update">
                 </form><br>
                 <!-- The delete button calls the JavaScript function -->
-=======
-                
->>>>>>> db01f7c6c295099331938e0c10e8fae8f17dfc24
                 <a href="#" onclick="confirmDelete(<?= $row['ID']; ?>); return false;" class="delete-btn">Delete</a>
             </td>
         </tr>
