@@ -5,7 +5,10 @@
     $price = $_POST['price'];
     $quantity = $_POST['quantity'];
 
-    $sqlStatement = "UPDATE products set Name='$name' Price=$price Quantity=$quantity where ID=$id";
+    $sqlStatement = "UPDATE products 
+                        SET Name= '$name', Price=$price, Quantity= $quantity
+                        where ID= '$id' ";
+
     $result = $mysqli -> query($sqlStatement);
     if($result){
         header("location:viewproduct.php");
