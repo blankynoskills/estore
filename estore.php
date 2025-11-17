@@ -23,6 +23,12 @@ require_once("dbinfo.php");
     <input type="text" name="quantity" placeholder="Enter product quantity" required>
 
     <input type="submit" class="submitbtn" value="Add product">
+    
+    <?php
+        if(isset($_GET['product']) ) {
+            echo $_GET['product'] . " has been added successfully!";
+        }
+    ?>
 
 </form>
 </body>
