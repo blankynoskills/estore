@@ -11,5 +11,10 @@ $mysqli = new mysqli("localhost","root","","sep_lab7");
     <link rel="stylesheet" href="css/editMovie.css">
 </head>
 <body>
+<form action="process.php" method="POST">
+
+
+<input type="text" name="name" placeholder="Enter product name">
+</form>
 </body>
 </html>
