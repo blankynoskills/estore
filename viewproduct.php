@@ -23,6 +23,9 @@ $result = $mysqli->query($sql);
 
 <h2 style="text-align:center;">Product List</h2>
 
+<form action="estore.php" method="get">
+        <button type="submit">estore</button>
+</form>
 <table>
     <tr>
         <th>ID</th>
