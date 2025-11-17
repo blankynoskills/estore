@@ -18,7 +18,7 @@ $result = $mysqli->query($sql);
         th, td { padding: 10px; border: 1px solid #555; text-align: left; }
         th { background: #eee; }
         .delete-btn {
-            color: #D9534F; /* Reddish color */
+            color: #D9534F; 
             text-decoration: none;
             font-weight: bold;
             padding: 5px 10px;
@@ -32,10 +32,10 @@ $result = $mysqli->query($sql);
         }
     </style>
     <script>
-        // JavaScript function to show a confirmation dialog before deleting
+        
         function confirmDelete(productId) {
             if (confirm("Are you sure you want to delete this product?")) {
-                // If user confirms, redirect to the delete script with the product ID
+                
                 window.location.href = 'delete_product.php?id=' + productId;
             }
         }
@@ -54,7 +54,7 @@ $result = $mysqli->query($sql);
         <th>Name</th>
         <th>Price</th>
         <th>Quantity</th>
-        <th>Action</th> <!-- Column for the delete button -->
+        <th>Action</th>
     </tr>
 
     <?php while ($row = $result->fetch_assoc()) : ?>
@@ -64,7 +64,7 @@ $result = $mysqli->query($sql);
             <td><?= 'S/' . number_format($row['Price'], 2); ?></td>
             <td><?= $row['Quantity']; ?></td>
             <td>
-                <!-- The delete button calls the JavaScript function -->
+                
                 <a href="#" onclick="confirmDelete(<?= $row['ID']; ?>); return false;" class="delete-btn">Delete</a>
             </td>
         </tr>
