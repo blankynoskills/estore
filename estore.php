@@ -1,6 +1,8 @@
 <?php 
-$mysqli = new mysqli("localhost","root","","sep_lab7");
+require_once("dbinfo.php");
 ?>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
