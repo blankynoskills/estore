@@ -15,6 +15,12 @@ $mysqli = new mysqli("localhost","root","","sep_lab7");
 
 
 <input type="text" name="name" placeholder="Enter product name">
+
+<input type="text" name="price" placeholder="Enter product price">
+
+<input type="text" name="quantity" placeholder="Enter product quantity">
+
+
 </form>
 </body>
 </html>
