@@ -12,7 +12,7 @@
         $selectsql = "SELECT * FROM products WHERE ID=$id";
         $result = $mysqli->query ($selectsql);
     ?>
-    <form action="submitupdate" method="post">
+    <form action="submitupdate.php" method="post">
     <?php
         while ($record = $result->fetch_assoc()){
     ?>
