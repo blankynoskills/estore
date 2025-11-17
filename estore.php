@@ -20,22 +20,16 @@ require_once("dbinfo.php");
 
     <input type="text" name="price" placeholder="Enter product price" required>
 
-    <input type="number" min="1" name="quantity" placeholder="Enter product quantity" required >
+    <input type="text" name="quantity" placeholder="Enter product quantity" required>
 
     <input type="submit" class="submitbtn" value="Add product">
     
     <?php
         if(isset($_GET['product']) ) {
-            echo $_GET['product'] . " has been added successfully!";
+            echo $_GET['product'] . "has been added successfully!";
         }
     ?>
 
 </form>
-
-<form action="viewproduct.php" method="get">
-        <button type="submit">View Product</button>
-</form>
-
-
 </body>
 </html>
